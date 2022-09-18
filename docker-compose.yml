@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  frontend: 
+    container_name: twtr-client
+    restart: always
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    volumes:
+      - ./client:/client
+    command: npm run start
+
+  backend:
+    container_name: twtr-server
+    restart: always
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - ./server:/server
+    ports:
+      - 5000:5000
+    command: node app.js
