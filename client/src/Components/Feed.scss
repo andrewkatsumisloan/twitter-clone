@@ -1,0 +1,16 @@
+.main-feed {
+    display: flex;
+    flex: 7 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    border-left: 1px solid rgb(169, 169, 169);
+    border-right: 1px solid rgb(169, 169, 169);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
