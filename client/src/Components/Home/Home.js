@@ -1,8 +1,8 @@
 import React from 'react'
 
-import SideBarLeft from './SideBarLeft';
-import SideBarRight from './SideBarRight';
-import Feed from './Feed'
+import SideBarLeft from '../SideBar/SideBarLeft/SideBarLeft'
+import SideBarRight from '../SideBar/SideBarRight/SideBarRight';
+import Feed from '../Feed/Feed'
 
 import './Home.scss';
 

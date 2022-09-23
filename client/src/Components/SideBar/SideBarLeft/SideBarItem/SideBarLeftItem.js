@@ -5,7 +5,7 @@ import './SideBarLeftItem.scss'
 const SideBarLeftItem = ( props ) => {
   return (
     <div className='sb-left-item'>
-        <h4> {props.itemName} </h4>
+        <p> {props.itemName} </p>
     </div>
   )
 }

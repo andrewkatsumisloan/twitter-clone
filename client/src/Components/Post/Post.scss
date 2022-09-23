@@ -1,0 +1,47 @@
+@import '../../Styles/Base';
+
+.single-post {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    // font-weight: bold;
+    align-items: flex-start;
+    border-radius: 30px;
+    border: none;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    align-self: flex-start;
+    background-color: $secondary-color;
+    color: $primary-text-color;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.profile-img {
+    display: flex;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    align-self: center;
+    background-color: $primary-color;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+
+    h2 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+}
+

@@ -1,0 +1,18 @@
+@import '../../Styles/Base';
+
+.search-box {
+    width: 100%;
+
+    .search-bar {
+        height: 40px;
+        width: 90%;
+        border-radius: 55px;
+        border: none;
+        padding: 5px;
+        padding-left: 25px;
+        background-color: $background-color-secondary;
+        color: $primary-text-color;
+
+    }
+    
+}

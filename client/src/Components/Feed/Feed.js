@@ -1,13 +1,13 @@
 import React from 'react'
-import CreatePost from './CreatePost'
-import ContentFeed from './ContentFeed'
+import CreatePost from '../CreatePost/CreatePost'
+import ContentFeed from '../ContentFeed/ContentFeed'
 import './Feed.scss'
 
 const Feed = () => {
     return (
         <div className='main-feed'>
             <div className='main-container'>
-                <h3> Latests Posts </h3>
+                <h2 className='feed-header'> Latests Posts </h2>
                 <CreatePost />
                 <ContentFeed />
             </div>
