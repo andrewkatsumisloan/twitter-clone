@@ -1,3 +1,5 @@
+@import '../../Styles/Base.scss';
+    
 .main-feed {
     display: flex;
     flex: 6 0 0;
@@ -5,6 +7,8 @@
     align-items: flex-start;
     border-left: 1px solid rgb(169, 169, 169);
     border-right: 1px solid rgb(169, 169, 169);
+    border-bottom: 1px solid rgb(169, 169, 169);
+    width: 100%;
 
 }
 
@@ -13,9 +17,14 @@
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
     
     .feed-header {
-        padding-left: 20px;
+        display: flex;
+        padding-left: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        // Make transparent, blurred 
+        background-color: rgba(255, 255, 255, 0.774);
     }
 }

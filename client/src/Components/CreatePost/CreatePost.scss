@@ -3,12 +3,13 @@
 .create-post {
     display: flex;
     flex-direction: column;
-    border: $border-weight;
-    border-radius: 15px;
-    padding: 25px;
-    width: 90%;
-    margin:  0 auto;
+    // border: $border-weight;
+    border-bottom: $border-weight;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
     align-items: center;
+    box-sizing: border-box;
 
     .post-input {
         border: 1px solid black;
@@ -55,8 +56,10 @@
         border-radius: 55px;
         border: none;
         width: 20%;
+        min-width: 120px;
         margin: 0;
         margin-top: 5px;
+        margin-bottom: 7.5px;
         padding: 5px;
         align-self: center;
         background-color: $primary-color;

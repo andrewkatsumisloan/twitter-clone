@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
-import * as API from '../../API/index.js'
+import * as api from '../../api/index.js'
 
 import './CreatePost.scss'
 
@@ -15,7 +15,7 @@ const CreatePost = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('This is the message prior to submission: ', message)
-        API.createPost({ message, createdAt: new Date().toISOString() });
+        api.createPost({ message, createdAt: new Date().toISOString() });
 
         setMessage('');
     }
