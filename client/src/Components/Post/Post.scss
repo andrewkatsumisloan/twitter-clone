@@ -45,3 +45,21 @@
     }
 }
 
+.delete-post {
+    display: flex;
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 80px;
+    border: 1px solid $primary-color;
+    font-size: .8rem;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(238, 83, 83, 0.725);
+    color: white;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 5px;
+    width: 0 auto;
+}

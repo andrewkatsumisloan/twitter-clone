@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
-
-import * as api from '../../api/index.js'
+import { useDispatch, useSelector } from 'react-redux';
+import { createPost } from '../../actions/posts';
 
 import './CreatePost.scss'
 
 const CreatePost = () => {
     const [message, setMessage] = useState('');
+    const dispatch = useDispatch();
 
     useEffect(() => {
         console.log(message);
@@ -15,8 +15,9 @@ const CreatePost = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('This is the message prior to submission: ', message)
-        api.createPost({ message, createdAt: new Date().toISOString() });
-
+        // api.createPost({ message, createdAt: new Date().toISOString() });
+        
+        dispatch(createPost({ message }));
         setMessage('');
     }
 

@@ -12,7 +12,8 @@ export const getPosts = async (req, res) => {
 
 export const createPost = async (req, res) => {
     const post = req.body;
-    const newPost = new Post(post);
+    // console.log('Got to create post in controller...', post)
+    const newPost = new Post({ ...post, message: post.message, createdAt: new Date().toISOString() });
     try {
         await newPost.save();
         res.status(201).json(newPost);
@@ -25,8 +26,8 @@ export const deletePost = async (req, res) => {
     const { id } = req.params;
     console.log('I got to the deletePost function in the controller')
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
-    
+
     await Post.findByIdAndRemove(id);
-    
+
     res.json({ message: "Post deleted successfully." });
 }

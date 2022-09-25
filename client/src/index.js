@@ -9,7 +9,6 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
 import reducers from './reducers';
 import postsReducer from './reducers/postsReducer';
 import authReducer from './reducers/authReducer';
