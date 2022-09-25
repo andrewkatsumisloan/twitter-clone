@@ -6,6 +6,7 @@ import './Post.scss'
 
 const Post = (props) => {
   const dispatch = useDispatch();
+  
   return (
     <div className='single-post' key={props._id}>
       <div className='profile-img'> </div>

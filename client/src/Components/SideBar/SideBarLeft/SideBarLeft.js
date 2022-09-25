@@ -11,7 +11,6 @@ import ShibaLogo from '../../../Assets/shiba-logo.png'
 const SideBarLeft = () => {
 
     return (
-        <div className='sb-left-container'>
             <StickyBox className='sb-left'>
                 <div className='app-logo'>
                     <img src={ShibaLogo} height='87.5px' width='70px' alt='Shiba Logo' />
@@ -29,7 +28,6 @@ const SideBarLeft = () => {
                 <UserLoginButton />
 
             </StickyBox>
-        </div>
     )
 }
 
