@@ -7,7 +7,8 @@ import './ContentFeed.scss'
 import * as api from '../../api/index.js';
 
 const ContentFeed = () => {
-  const [posts, setPosts] = useState([]);
+  // get posts from redux
+  const posts = useSelector((state) => state.posts)
   const dispatch = useDispatch();
 
   // Get posts on initial render
@@ -15,18 +16,11 @@ const ContentFeed = () => {
     dispatch(getPosts());
   }, [dispatch]);
 
-  // Get posts from Redux, update when posts change
-  const postsFromRedux = useSelector((state) => state.posts);
-  useEffect(() => {
-    postsFromRedux.reverse();
-    setPosts(postsFromRedux);
-  }, [postsFromRedux]);
-
 
   return (
     <div className='content-feed'>
       {/* Render all of the posts... */}
-      {posts.map((post) => (
+      {posts.slice(0).reverse().map((post) => (
         <Post key={post._id} {...post} /> ))}
     </div>
   )

@@ -1,69 +1,98 @@
 @import '../../Styles/Base';
 
-.create-post {
+.create-post-container {
     display: flex;
-    flex-direction: column;
-    // border: $border-weight;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-top: $border-weight;
     border-bottom: $border-weight;
     width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    align-items: center;
-    box-sizing: border-box;
 
-    .post-input {
-        border: 1px solid black;
-        padding: 10px;
-        width: 90%;
-        height: 60px;
-
-        // textarea styles
-        resize: none;
-        overflow: auto;
-        border: none;
-        background-color: $secondary-color;
-        border-radius: 45px;
-        padding: 30px;
-        font-family: 'Roboto', sans-serif;
-        color: $primary-text-color;
-        // White placeholder text
-        &::placeholder {
-            color: $secondary-text-color;
-        }
-
-        // on select
-        &:focus {
-            outline: none;
-        }
-        font-size: 1.25rem;
-
-    }
-
-    .form-class {
+    .create-post {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
         align-items: center;
-        width: 80%;
-        align-self: center;
-    }
-
-    .post-button {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.15rem;
-        font-weight: bold;
-        align-items: flex-start;
-        border-radius: 55px;
-        border: none;
-        width: 20%;
-        min-width: 120px;
-        margin: 0;
-        margin-top: 5px;
-        margin-bottom: 7.5px;
-        padding: 5px;
-        align-self: center;
-        background-color: $primary-color;
-        color: white;
-        align-items: center;
+    
+        .post-input {
+            border: 1px solid black;
+            padding: 10px;
+            width: 90%;
+            height: 140px;
+    
+            // textarea styles
+            resize: none;
+            overflow: auto;
+            border: none;
+            background-color: $secondary-color;
+            border-radius: 45px;
+            box-sizing: border-box;
+            padding: 30px;
+            font-family: 'Roboto', sans-serif;
+            color: $primary-text-color;
+            // White placeholder text
+            &::placeholder {
+                color: $secondary-text-color;
+            }
+    
+            // on select
+            &:focus {
+                outline: none;
+            }
+            font-size: 1.25rem;
+    
+        }
+        
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 10px;
+            align-items: center;
+        
+            .form-class {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                margin: 0 auto;
+                align-self: center;
+    
+                .avatar {
+                    display: flex;
+                    border-radius: 100%;
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 20px;
+                    align-self: center;
+                    background-color: $primary-color;
+                }
+            }
+        }
+        
+    
+        .post-button {
+            font-size: 1.15rem;
+            font-weight: bold;
+            align-items: flex-start;
+            border-radius: 55px;
+            border: none;
+            width: 20%;
+            min-width: 120px;
+            margin: 0;
+            margin-top: 5px;
+            margin-bottom: 7.5px;
+            padding: 5px;
+            align-self: center;
+            background-color: $primary-color;
+            color: white;
+            align-items: center;
+        }
     }
 }
+

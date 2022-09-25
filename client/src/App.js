@@ -5,8 +5,7 @@ import Home from './Components/Home/Home';
 
 import './App.scss';
 
-function App() {
-
+function App() {  
   return (
     <GoogleOAuthProvider clientId="322468080997-j5gft9mrr0dqda6633fjthh6hvrn6ocb.apps.googleusercontent.com">
       <div className="App">
