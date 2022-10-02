@@ -23,7 +23,7 @@ The goal of this project is to recreate as much of Twitter as possible using the
 
 
 ### :camera: Screenshots :camera:
-<img width="500" alt="Screen Shot 2022-09-24 at 21 27 34" src="https://user-images.githubusercontent.com/30994664/192128427-7bea145e-68d0-4f15-882f-cbbabae54062.png">
+<img width="1466" alt="Screen Shot 2022-10-01 at 23 17 58" src="https://user-images.githubusercontent.com/30994664/193440821-3aebe51a-24e5-4030-bf22-4c13ba2d6cfa.png">
 
 ### Miscellaneous
 By the time this project is finished, you should be able to run it simply by replacing the database connection string in the .env file and executing ```docker-compose build``` and ```docker-compose up -d``` in the terminal. 
