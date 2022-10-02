@@ -5,7 +5,7 @@ import './SuggestionsBar.scss'
 const SuggestionsBar = () => {
   return (
     <div className='suggestions-bar'>
-        <h3> What's Trending Now </h3>
+      <h3 className='suggestions-text'> What's Trending Now </h3>
     </div>
   )
 }

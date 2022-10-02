@@ -13,11 +13,11 @@
     @media screen and (max-width: 768px) {
         display: none;
     }
-    
+
     .app-logo {
         align-self: flex-start;
     }
-    
+
     .post-left-button {
         display: flex;
         flex-direction: column;
@@ -35,5 +35,38 @@
         color: white;
         align-items: center;
     }
-}
 
+    .sb-left-item {
+        display: flex;
+        border: none;
+        border-radius: 35px;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.15rem;
+        text-decoration: none;
+        color: black;
+
+        // on hover, change color
+        &:hover {
+            background-color: $secondary-color;
+        }
+
+        // Remove link styling
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .text-sb {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 8px;
+            width: 100%;
+        }
+
+    }
+}

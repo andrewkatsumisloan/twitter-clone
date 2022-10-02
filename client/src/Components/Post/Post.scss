@@ -57,7 +57,7 @@
     margin-right: 80px;
     text-align: left;
 
-    h2 {
+    h3 {
         font-size: 1rem;
         font-weight: bold;
         margin: 0;
@@ -77,13 +77,16 @@
         flex-direction: column;
         margin-left: 62px;
         text-align: left;
-    
+
         h5 {
             align-self: flex-start;
+            font-size: .8rem;
+            font-weight: bold;
             padding: 0px;
             margin: 0px;
+            margin-top: 5px;
         }
-    
+
         p {
             padding: 0px;
             margin: 0px;
@@ -110,5 +113,5 @@
 
         }
     }
-    
+
 }

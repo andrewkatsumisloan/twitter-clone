@@ -6,4 +6,11 @@
     margin-top: 20px;
     height: 60%;
     width: 100%;
+    min-width: 300px;
+
+    .suggestions-text {
+        font-size: 1.25rem;
+        font-weight: bold;
+        padding: 5px;
+    }
 }

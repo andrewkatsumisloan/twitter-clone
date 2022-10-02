@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { configureStore } from '@reduxjs/toolkit';
+import { ChakraProvider } from "@chakra-ui/react";
 
 import './index.scss';
 import App from './App';
@@ -23,8 +24,10 @@ const store = configureStore({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <Provider store={store}> 
-    <App />
+  <Provider store={store}>
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </Provider>
 );
 

@@ -15,5 +15,10 @@
         background-color: $secondary-color;
     }
 
-}
+    // Remove link styling
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
+}

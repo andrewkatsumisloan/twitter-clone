@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import { Avatar } from '@material-ui/core'
 import moment from 'moment';
 import { deletePost } from '../../actions/posts';
+
 import './Post.scss'
 
 const Post = (props) => {
