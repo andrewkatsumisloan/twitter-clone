@@ -33,6 +33,7 @@ const Profile = () => {
         <div className='main-profile-container'>
             <div className='central-profile-container'>
                 <ProfileHeader> </ProfileHeader>
+                {/* Should probably use the ContentFeed component for this, later. */}
                 <div className='content-feed-profile'>
                     {userPosts.slice(0).reverse().map((post) => (
                         <Post key={post._id} {...post} />))}

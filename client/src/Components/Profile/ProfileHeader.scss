@@ -7,13 +7,15 @@
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
+    // margin: 20px;
     background-color: white;
-    padding: 20px;
-    // box-sizing: border-box;
+    padding: 50px;
     // border-radius: 45px;
     align-items: flex-start;
     border: $border-weight;
     border-top: none;
+    box-sizing: border-box;
+
 
     .profile-img {
         border-radius: 100%;
@@ -23,9 +25,9 @@
     }
 
     .avatar {
-        width: 100px;
-        height: 100px;
-        margin-top: 45px;
+        width: 75px;
+        height: 75px;
+        margin-top: 25px;
         margin-bottom: 75px;
     }
 

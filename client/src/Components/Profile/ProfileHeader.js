@@ -7,7 +7,7 @@ const dummyData = [
         id: 1,
         name: 'Andrew Sloan',
         username: 'andrewsloan',
-        intro: 'Dad to Papaya T.H',
+        intro: 'Cat dad',
     }
 ]
 const ProfileHeader = () => {
