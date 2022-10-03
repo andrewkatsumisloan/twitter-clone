@@ -14,12 +14,16 @@ The goal of this project is to recreate as much of Twitter as possible using the
   - Basic Twitter layout/framework complete 	
   - Post something to the timeline (text only for now) 
   - Delete posts from the timeline 
-  - Responsive design — mobile friendly 
+  - Responsive design — mobile friendly
+  - Users can navigate to their profile via the sidebar and see all the posts they've made.
+ 
   
  ### :construction_worker_man:	Work in Progress :construction_worker_man:	
-  - User Authentication 
+  - Custom User Authentication 
   - Modernize Redux implementation, use Slices
   - Search function
+  - Unit + Integration Testing
+
 
 
 ### :camera: Screenshots :camera:
