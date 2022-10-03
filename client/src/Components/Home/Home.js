@@ -9,9 +9,9 @@ import './Home.scss';
 const Home = () => {
   return (
     <div className='home-class'>
-        <SideBarLeft />
-        <Feed />
-        <SideBarRight />
+      {/* <SideBarLeft /> */}
+      <Feed />
+      {/* <SideBarRight /> */}
     </div>
   )
 }

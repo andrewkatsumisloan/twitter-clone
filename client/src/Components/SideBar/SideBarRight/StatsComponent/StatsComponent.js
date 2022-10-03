@@ -16,7 +16,7 @@ const StatsComponent = () => {
         <div className='stats-container'>
             <StatGroup>
                 <Stat>
-                    <StatLabel>Profile Impressions</StatLabel>
+                    <StatLabel> Impressions</StatLabel>
                     <StatNumber>345,670</StatNumber>
                     <StatHelpText>
                         <StatArrow type='increase' />

@@ -10,7 +10,7 @@ const CreatePost = () => {
     const dispatch = useDispatch();
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
 
-    
+
     // Check and set user on initial render
     useEffect(() => {
         setUser(JSON.parse(localStorage.getItem('profile')));
@@ -25,7 +25,7 @@ const CreatePost = () => {
         console.log('This is the message prior to submission: ', message)
         // api.createPost({ message, createdAt: new Date().toISOString() });
 
-        dispatch(createPost({ message, creator: user?.result?.name }));
+        dispatch(createPost({ message, creator: user?.result?.name, creatorId: user?.result?.sub }));
         setMessage('');
     }
 
@@ -37,18 +37,18 @@ const CreatePost = () => {
         <div className='create-post-container'>
             <div className='create-post'>
                 <form className='form-container' onSubmit={(e) => handleSubmit(e)}>
-                    <div className='form-class'> 
-                    {/* Conditionally render user avatar */}
-                    {user ? (
-                        <Avatar className='avatar' alt={user.result.name} src={user.result.picture} />
-                    ) : (
-                        <Avatar className='avatar' alt='' src='https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg' />
-                    )}
-                    <input
-                        className='post-input'
-                        placeholder="What's on your mind?"
-                        onChange={handleChange}
-                        value={message} />
+                    <div className='form-class'>
+                        {/* Conditionally render user avatar */}
+                        {user ? (
+                            <Avatar className='avatar' alt={user.result.name} src={user.result.picture} />
+                        ) : (
+                            <Avatar className='avatar' alt='' src='https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg' />
+                        )}
+                        <input
+                            className='post-input'
+                            placeholder="What's on your mind?"
+                            onChange={handleChange}
+                            value={message} />
                     </div>
                     <button className='post-button'> Post </button>
                 </form>

@@ -1,6 +1,21 @@
+@import '../../Styles/Base.scss';
+
 .main-profile-container {
     display: flex;
+    flex: 6 0 0;
     flex-direction: row;
+
+    .central-profile-container {
+        display: flex;
+        flex: 6 0 0;
+        flex-direction: column;
+        width: 100%;
+
+        .content-feed-profile {
+            flex: 10 0 0;
+            border: $border-weight;
+        }
+    }
 }
 
 .sidebar-left {
