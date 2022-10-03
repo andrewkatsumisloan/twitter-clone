@@ -16,6 +16,7 @@ The goal of this project is to recreate as much of Twitter as possible using the
   - Delete posts from the timeline 
   - Responsive design — mobile friendly
   - Users can navigate to their profile via the sidebar and see all the posts they've made.
+  - Users can like posts.
  
   
  ### :construction_worker_man:	Work in Progress :construction_worker_man:	
@@ -23,6 +24,7 @@ The goal of this project is to recreate as much of Twitter as possible using the
   - Modernize Redux implementation, use Slices
   - Search function
   - Unit + Integration Testing
+  - Create a place on your profile to view all of your liked posts
 
 
 
