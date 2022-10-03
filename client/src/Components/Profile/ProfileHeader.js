@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Avatar } from '@material-ui/core'
 import './ProfileHeader.scss'
 
@@ -11,12 +11,15 @@ const dummyData = [
     }
 ]
 const ProfileHeader = () => {
+    const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')));
+    console.log('USER!!!', user)
+
     return (
         <div className='profile-header-container'>
             {/* Large material ui avatar */}
-            <Avatar className='avatar' style={{ fontSize: '62px' }} alt='Andrew Sloan' />
+            <Avatar className='avatar' style={{ fontSize: '62px' }} alt='Andrew Sloan' src={user?.result?.picture} />
             <div className='profile-details'>
-                <div className='profile-name'> {dummyData[0]['name']} </div>
+                <div className='profile-name'> {user?.result?.name} </div>
                 <div className='profile-username'> @{dummyData[0]['username']} </div>
                 <div className='profile-intro'> {dummyData[0]['intro']} </div>
             </div>

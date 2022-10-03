@@ -46,6 +46,38 @@
 
 }
 
+.like-container {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+    // align-self: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    padding-right: 40px;
+
+    like-icon {
+        display: flex;
+        align-self: center;
+        align-items: center;
+    }
+
+    .like-count {
+        justify-content: baseline;
+        align-items: center;
+        width: 100%;
+
+
+    }
+}
+
+
+
 .post-body {
     display: flex;
     flex: 9 9 0;
