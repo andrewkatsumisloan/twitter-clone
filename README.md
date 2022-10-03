@@ -14,17 +14,16 @@ The goal of this project is to recreate as much of Twitter as possible using the
 ### :point_right: Current functionality :point_left:	
   - Basic Twitter layout/framework complete 	
   - Post something to the timeline (text only for now) 
-  - Delete posts from the timeline 
+  - Delete your posts from the timeline 
   - Responsive design — mobile friendly
-  - Users can navigate to their profile via the sidebar and see all the posts they've made.
-  - Users can like posts.
+  - Users can navigate to their profile via the sidebar and see all the posts they've made and a profile header.
+  - Users can like posts (their own and others!)
  
   
  ### :construction_worker_man:	Work in Progress :construction_worker_man:	
-  - Custom User Authentication 
-  - Modernize Redux implementation, use Slices
-  - Search function
+  - Modernize Redux implementation, use slices
   - Unit + Integration Testing
+  - Search function
   - Create a place on your profile to view all of your liked posts
 
 
