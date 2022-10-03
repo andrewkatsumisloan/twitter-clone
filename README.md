@@ -15,7 +15,7 @@ The goal of this project is to recreate as much of Twitter as possible using the
   - Post something to the timeline (text only for now) 
   - Delete posts from the timeline 
   - Responsive design — mobile friendly 
-  — Users can navigate to their profile via the sidebar and see all the posts they've made 
+  — Users can navigate to their profile via the sidebar and see all the posts they've made.
   
  ### :construction_worker_man:	Work in Progress :construction_worker_man:	
   - User Authentication 
