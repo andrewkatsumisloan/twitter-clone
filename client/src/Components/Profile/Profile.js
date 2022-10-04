@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getPosts } from '../../actions/posts';
-import Post from '../Post/Post'
+import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import SideBarLeft from '../SideBar/SideBarLeft/SideBarLeft'
+import ProfileFeed from './ProfileFeed/ProfileFeed';
+import LikeFeed from './LikeFeed/LikeFeed';
 
 import ProfileHeader from './ProfileHeader';
 import './Profile.scss'
@@ -20,7 +22,7 @@ const Profile = () => {
 
     // Get posts from the user
     const userPosts = posts.filter((post) => post.creatorId === user?.result?.sub)
-
+    const userLikes = posts.filter((post) => post.likes.includes(user?.result?.sub))
 
     console.log('User posts: ', userPosts)
 
@@ -34,9 +36,21 @@ const Profile = () => {
             <div className='central-profile-container'>
                 <ProfileHeader> </ProfileHeader>
                 {/* Should probably use the ContentFeed component for this, later. */}
-                <div className='content-feed-profile'>
-                    {userPosts.slice(0).reverse().map((post) => (
-                        <Post key={post._id} {...post} />))}
+                <div className='profile-feed'>
+                    <Tabs variant='soft-rounded' isFitted colorScheme='green'>
+                        <TabList mt={4} mb={4} pr={12} pl={12}>
+                            <Tab shadow='sm' pt={2}>Posts</Tab>
+                            <Tab shadow='sm' pt={2}>Likes</Tab>
+                        </TabList>
+                        <TabPanels >
+                            <TabPanel p={0}>
+                                <ProfileFeed posts={userPosts}> </ProfileFeed>
+                            </TabPanel>
+                            <TabPanel p={0}>
+                                <LikeFeed likedPosts={userLikes}> </LikeFeed>
+                            </TabPanel>
+                        </TabPanels>
+                    </Tabs>
                 </div>
             </div>
         </div>

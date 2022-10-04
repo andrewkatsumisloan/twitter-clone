@@ -2,7 +2,7 @@
 
 .main-profile-container {
     display: flex;
-    flex: 6 0 0;
+    flex: 8 0 0;
     flex-direction: row;
 
     .central-profile-container {
@@ -11,9 +11,17 @@
         flex-direction: column;
         width: 100%;
 
+        .profile-feed {
+            flex: 6 0 0;
+        }
+
         .content-feed-profile {
             flex: 10 0 0;
+            border-radius: 20px;
             border: $border-weight;
+            border-bottom: none;
+            // border-top: none;
+
         }
     }
 }

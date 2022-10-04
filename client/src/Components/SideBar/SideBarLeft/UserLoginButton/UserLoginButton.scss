@@ -3,7 +3,7 @@
 .user-login-sidebar {
     display: flex;
     align-self: flex-start;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
     border: 1px solid $primary-color;
     font-size: 1.5rem;
@@ -16,7 +16,9 @@
     color: rgb(237, 217, 177);
     margin-top: auto;
     margin-bottom: 5px;
-    width: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90%;
 }
 
 .google-login {
@@ -30,6 +32,7 @@
     padding: 0px;
 
     flex-direction: column;
+
     .user-login-button-logged-in-user {
         display: flex;
         flex-direction: row;
