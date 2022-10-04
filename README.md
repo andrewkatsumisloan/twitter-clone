@@ -1,4 +1,4 @@
-# fake-twitter
+# twitter-clone-mern
 The goal of this project is to recreate as much of Twitter as possible using the MERN (MongoDB, Express, React, Node) stack. 
 
 ### :computer: Tech Stack :computer:
@@ -18,6 +18,7 @@ The goal of this project is to recreate as much of Twitter as possible using the
   - Responsive design — mobile friendly
   - Users can navigate to their profile via the sidebar and see all the posts they've made and a profile header.
   - Users can like posts (their own and others!)
+  - Users can view their own posts and their own likes by navigating to their profiles.
  
   
  ### :construction_worker_man:	Work in Progress :construction_worker_man:	
