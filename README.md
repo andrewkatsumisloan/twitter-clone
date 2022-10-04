@@ -30,6 +30,8 @@ The goal of this project is to recreate as much of Twitter as possible using the
 
 ### :camera: Screenshots :camera:
 <img width="1287" alt="Screen Shot 2022-10-02 at 23 52 29" src="https://user-images.githubusercontent.com/30994664/193517113-4cfa143c-a7e8-4baf-b523-4c3c368eb03f.png">
+<img width="1313" alt="Screen Shot 2022-10-04 at 13 32 59" src="https://user-images.githubusercontent.com/30994664/193921200-804c4790-841c-443a-9071-35be65a312a2.png">
+
 
 
 ### Miscellaneous
