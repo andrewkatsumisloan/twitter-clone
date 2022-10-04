@@ -3,6 +3,8 @@ import CreatePost from '../CreatePost/CreatePost'
 import ContentFeed from '../ContentFeed/ContentFeed'
 import StickyBox from 'react-sticky-box'
 
+
+
 import './Feed.scss'
 
 const Feed = () => {
