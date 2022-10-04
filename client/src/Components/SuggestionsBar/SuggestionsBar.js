@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './SuggestionsBar.css'
+import './SuggestionsBar.scss'
 
 const SuggestionsBar = () => {
   return (
