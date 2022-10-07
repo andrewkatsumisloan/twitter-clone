@@ -39,8 +39,8 @@ const Profile = () => {
                 <div className='profile-feed'>
                     <Tabs variant='soft-rounded' isFitted colorScheme='green'>
                         <TabList mt={4} mb={4} pr={12} pl={12}>
-                            <Tab shadow='sm' pt={2}>Posts</Tab>
-                            <Tab shadow='sm' pt={2}>Likes</Tab>
+                            <Tab shadow='sm' mr={6} pt={2}>Posts</Tab>
+                            <Tab shadow='sm' ml={6} pt={2}>Likes</Tab>
                         </TabList>
                         <TabPanels >
                             <TabPanel p={0}>
