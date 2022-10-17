@@ -31,9 +31,9 @@ The goal of this project is to recreate as much of Twitter as possible using the
 
 ### :camera: Screenshots :camera:
 <img width="1287" alt="Screen Shot 2022-10-02 at 23 52 29" src="https://user-images.githubusercontent.com/30994664/193517113-4cfa143c-a7e8-4baf-b523-4c3c368eb03f.png">
-<img width="1304" alt="Screen Shot 2022-10-04 at 13 35 13" src="https://user-images.githubusercontent.com/30994664/193921727-3338ab83-aca2-4e4f-8b36-2cd41986f7d9.png">
 
-
+Profile View
+<img width="1264" alt="Screen Shot 2022-10-04 at 13 45 38" src="https://user-images.githubusercontent.com/30994664/194929452-6f217ceb-76c2-4d85-b2ad-f57d06c4c9ba.png">
 
 
 ### Miscellaneous
